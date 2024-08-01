@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GOVT EXAMS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+/* Quiz styles */
+.quiz-container {background-color: #f2f2f2; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px 0px #000; margin-top: 20px;}
+.quiz-header {margin-bottom: 20px;}
+.quiz-question {font-size: 24px; font-weight: bold;}
+.quiz-options {margin-top: 10px;}
+.quiz-option {background-color: #e7e7e7; padding: 10px; border: none; border-radius: 5px; cursor: pointer; margin-bottom: 10px; width: 100%; text-align: left;}
+.quiz-option:hover {background-color: #d7d7d7;}
+.timer {font-size: 20px; font-weight: bold; color: #ff0000; text-align: right;}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://images.app.goo.gl/hGYU3QhxAD31mSyT7" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a href="#quiz" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-question-circle w3-xxlarge"></i>
+    <p>QUIZ</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#quiz" class="w3-bar-item w3-button" style="width:25% !important">QUIZ</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> GOVT EXAMS </h1>
+    <p>STUDY MORE COMPARE LESS </p>
+    <img src="https://www.thoughtco.com/thmb/EwAYd01fEQVKV2QAqyQeXkNUfKo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/168116621SoloStudierInLibrary-56a18fe63df78cf7726c087e.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">AIM </h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Special Features and Benefits: "Stay Ahead with Up-to-Date Content and Real-Time Exam Simulations. Master Every Topic with Our In-Depth Analysis and Strategies." "Exclusive Benefits: Get Early Access to New Courses, Special Discounts, and a Community of Like-Minded Learners."</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">LEARNING </h3>
+    <p class="w3-wide">DAILY CURRENT AFFAIRS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">PREVIOUS YEAR PYQ</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">GENERAL AWARENESS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download 
+    </button>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="w3-content w3-padding-64 w3-text-grey">
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+    <img src="https://as2.ftcdn.net/v2/jpg/02/97/24/51/1000_F_297245133_gBPfK0h10UM3y7vfoEiBC3ZXt559KZar.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at GOVT EXAMs.</p>
+    <p>John EX- CGL OFFICER.</p><br>
+    <img src="https://as2.ftcdn.net/v2/jpg/06/36/46/45/1000_F_636464567_rTteiuRZHlq92RvbV25PmqAWwqHxb1Yb.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">RESHAB.</span> CEO at Company.</p>
+    <p>EX- RBI EXECUTIVE OFFICER.</p>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">SUCCESS</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCw4lC549dC8tiqUeJQQSvqUXt-H6xgLl1Y_wj4gTd24uexBKefH2Oqy-8&s=10" style="width:100%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfxUXgoR7Zn4ktp-Gja-RQoivxm2nVT9eog&usqp=CAU" style="width:100%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHg9pNu3kjrzoHb-LFBBBwZtuy2mm7n56WzV0HOhfdSsk5DBKU_GTOOmI&s=10" style="width:100%">
+      </div>
+    </div>
+    <!-- End photo grid -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> PUNAICHAK POST OFFICE GALI, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: govtexam@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="quiz">
+    <h2 class="w3-text-light-grey">Quiz</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="quiz-container">
+      <div class="timer" id="timer">Time Left: 60</div>
+      <div class="quiz-header">
+        <div class="quiz-question" id="quiz-question">Question text</div>
+        <div class="quiz-options">
+          <button class="quiz-option" onclick="selectOption(0)">Option 1</button>
+          <button class="quiz-option" onclick="selectOption(1)">Option 2</button>
+          <button class="quiz-option" onclick="selectOption(2)">Option 3</button>
+          <button class="quiz-option" onclick="selectOption(3)">Option 4</button>
+        </div>
+      </div>
+      <button class="w3-button w3-light-grey w3-padding-large" onclick="startQuiz()">Start Quiz</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://govtexam.netlify.app/" target="_blank" class="w3-hover-text-green">GOVT EXAMS 2024</a></p>
+  </footer>
+</div>
+
+<script>
+const questions = [
+  {
+    question: "What is the capital of France?",
+    options: ["Berlin", "Madrid", "Paris", "Lisbon"],
+    correct: 2
+  },
+  {
+    question: "What is 2 + 2?",
+    options: ["3", "4", "5", "6"],
+    correct: 1
+  },
+  {
+    question: "Which planet is known as the Red Planet?",
+    options: ["Earth", "Mars", "Jupiter", "Saturn"],
+    correct: 1
+  }
+];
+
+let currentQuestionIndex = 0;
+let score = 0;
+let timer;
+let timeLeft = 60;
+
+function startQuiz() {
+  score = 0;
+  currentQuestionIndex = 0;
+  document.querySelector(".quiz-container button").style.display = "none";
+  document.querySelector("#timer").style.display = "block";
+  loadQuestion();
+  startTimer();
+}
+
+function loadQuestion() {
+  const currentQuestion = questions[currentQuestionIndex];
+  document.querySelector("#quiz-question").innerText = currentQuestion.question;
+  const options = document.querySelectorAll(".quiz-option");
+  options.forEach((option, index) => {
+    option.innerText = currentQuestion.options[index];
+    option.onclick = () => selectOption(index);
+  });
+}
+
+function selectOption(selectedIndex) {
+  const currentQuestion = questions[currentQuestionIndex];
+  if (selectedIndex === currentQuestion.correct) {
+    score++;
+  }
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    loadQuestion();
+  } else {
+    endQuiz();
+  }
+}
+
+function startTimer() {
+  timer = setInterval(() => {
+    timeLeft--;
+    document.querySelector("#timer").innerText = `Time Left: ${timeLeft}`;
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      endQuiz();
+    }
+  }, 1000);
+}
+
+function endQuiz() {
+  clearInterval(timer);
+  document.querySelector(".quiz-container").innerHTML = `<h2>Your score is ${score}/${questions.length}</h2>`;
+}
+</script>
+
+</body>
+</html>
